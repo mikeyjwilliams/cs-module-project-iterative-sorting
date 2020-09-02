@@ -44,3 +44,38 @@ def counting_sort(arr, maximum=None):
 
 
     return arr
+
+# insertion sort
+# you have part array thats sorted
+# take next unsorted el
+# insert it into sorted part array
+# swap it in place / shift other els to the right
+# compare to each of els in sorted part of array going biggest ==> smallest
+# otherwise if sorted el is < current:
+    # found right place insert it
+# else get to end
+    # insert at beginning
+# 1 how we know where to insert it?
+# 2 how move other elements over?
+
+nums = [63,64,84,97,29,8,83,46,58,49,45,26,13]
+
+def insertion_sort(arr):
+    # part of arr is sorted
+    # have an index to 1st el thats unsorted
+    first_unsorted_index = 1
+    # take next unsorted el
+    # store el trying to insert into a var
+    current_el = arr[first_unsorted_index]
+    # compare it to each of the els in sorted part of array going from biggest --> smallest
+    sorted_index = first_unsorted_index - 1
+    while
+    # iif sorted el bigger than current, shift sorted el right by 1
+        if arr[sorted_index] > current_el:
+            arr[sorted_index + 1] = arr[sorted_index]
+            sorted_index = sorted_index - 1
+        # other wise sorted el is < current:
+        elif arr[sorted_index] < current_el:
+
+        # found right place and can insert it ther else get to end
+        elif 
